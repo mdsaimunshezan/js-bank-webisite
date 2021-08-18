@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank site</title>
+    <!-- TailWind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="w-3/4 mx-auto">
+        <h1 class="lg:text-5xl sm:text-3xl text-center py-12">Let's get some  <span class="text-pink-600 font-bold"> mooooooooony !!</span> </h1>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 text-white">
+            <div class="bg-pink-400 p-8 rounded">
+                <h1 class="text-3xl mb-4 font-bold">Deposit</h1>
+                <h2 class="text-4xl">$<span id="deposite-blance">00</span></h2>
+            </div>
+            <div class="bg-indigo-400 p-8 rounded">
+                <h1 class="text-3xl mb-4 font-bold">Withrow</h1>
+                <h2 class="text-4xl">$<span id="widthrow-blance">00</span></h2>
+            </div>
+            <div class="bg-green-400 p-8 rounded">
+                <h1 class="text-3xl mb-4 font-bold">Balance</h1>
+                <h2 class="text-4xl">$<span id="main-blance">120</span></h2>
+            </div>
+        </div>
+        
+
+      
+    </section>
+
+
+     <!-- Deposite section -->
+    <section class="w-3/4 mx-auto  p-8 mt-8 rounded grid grid-cols-2 gap-4 ">
+          <div class="bg-green-400 p-8" >
+            <h1 class="text-3xl text-white mb-4 text-center">Plese Deposite</h1>
+            <input type="text" id="deposite-input" placeholder="Plese deposite money" class="w-full p-2 mb-8">
+            <button class="py-2 px-4 bg-pink-400 w-full text-white" id="deposite-btn">Deposit</button>
+        </div>
+        <div class="bg-blue-400 p-8">
+            <h1 class="text-3xl text-white mb-4 text-center">Plese Widthrow</h1>
+            <input type="text" id="widthrow-input" placeholder="Plese deposite money" class="w-full p-2 mb-8">
+            <button class="py-2 px-4 bg-green-400 w-full text-white" id="widthrow-btn">Widthrow</button>
+        </div>
+    </section>
+
+    <!-- Js Connect -->
+    <script src="./js/blance.js"></script>
+</body>
+</html>
